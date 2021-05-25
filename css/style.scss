@@ -1,0 +1,420 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hmo8pz');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?hmo8pz#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?hmo8pz') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?hmo8pz') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?hmo8pz##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+}
+
+
+$background-color: #e3e8ee;
+$font: 'Poppins', sans-serif;
+$font-title: 'Roboto', sans-serif;
+$font-color: #816be8;
+$container-color: #30328c;
+$shadow-color: #c4c4c4;
+$shadow-color-secondary: #8d8c8c;
+$card-color: #dce8f4;
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+}
+
+.container{
+	margin: 40px 0;
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 20px $shadow-color;
+	position: relative;
+	max-height: 800px;
+}
+
+.banner{
+    width: 95%;
+    height: 300px;
+    margin: 30px auto;
+    background: url(../images/bta3.jpg) no-repeat center 32%;
+    border-radius: 15px;
+    position: relative;
+    &__city{
+        position: absolute;
+        top: 40px;
+        left: 100px;
+        font-family: $font-title;
+        color: $font-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    &__item{
+      	width: 80px;
+      	height: 80px;
+      	position: absolute;
+      	top: 70px;
+      	left: -34px;
+      	background-color: $container-color;
+      	border-radius: 0 30px 30px 10px;
+      	color: white;
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+      	justify-content: center;
+      	font-size: .8rem;
+      	z-index: 2;
+      	&--temperature{
+        	top: 70px;
+        	justify-content: flex-end;
+        	font-family: $font-title;
+        	font-size: 2rem;
+        	background-color: $font-color;
+        	height: 150px;
+			border-radius: 0 30px 30px 0;
+        	z-index: 1;
+			&::before{
+				content: '';
+				width: 10px;
+				height: 10px;
+				background-color: $container-color;
+				position: absolute;
+				top: -10px;
+				left: 0;
+			}
+			&::after{
+				content: '';
+				width: 10px;
+				height: 10px;
+				background-color: $font-color;
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+			}
+			& .before{
+				width: 18px;
+				height: 17px;
+				position: absolute;
+				top: -17px;
+				left: 0px;
+				border-radius: 50%;
+				background-color: white;		
+			}
+			& .after{
+				width: 18px;
+				height: 17px;
+				position: absolute;
+				bottom: -17px;
+				left: 0px;
+				border-radius: 50%;
+				background-color: white;
+				z-index: 1;
+			}
+      	}
+    }
+	&__temperature{
+		margin: 0 0 16px;
+	}
+    &__centigrades{
+      	font-size: .8rem;
+		font-family: $font;
+		vertical-align: top;
+    }
+}
+
+.content-container{
+	width: 95%;
+	margin: 0 auto 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.forecast{
+	width: 20%;
+	height: 410px;
+}
+
+.title{
+	font-size: 2rem;
+	&__subtext{
+		font-weight: 400;
+	}
+}
+
+.card{
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	display: flex;
+	border-radius: 15px;
+	box-shadow: 2px 16px 40px $shadow-color;
+	margin-bottom: 25px;
+	&__left{
+		width: 65%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__icon{
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+		margin-right: 10px;
+	}
+	&__weather{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	&__day{
+		font-weight: 600;
+		margin: 0;
+	}
+	&__state{
+		margin: 0;
+		color: $shadow-color-secondary;
+	}
+	&__right{
+		width: 35%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $card-color;
+		border-radius: 15px;
+	}
+	&__temperature{
+		font-family: $font-title;
+		font-weight: 700;
+	}
+	&__centigrades{
+		vertical-align: middle;
+	}
+}
+
+.places{
+	width: 40%;
+	height: 410px;
+	display: flex;
+	flex-direction: column;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__principal{
+		width: 50%;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 30px;
+	}
+	&__secondary{
+		height: 300px;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__first{
+		width: 100%;
+		height: 30%;
+		border-radius: 30px;
+		object-fit: cover;
+	}
+	&__second{
+		width: 100%;
+		height: 60%;
+		border-radius: 30px;
+		position: relative;
+		overflow: hidden;
+	}
+	&__img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__button{
+		width: 30%;
+		height: 100%;
+		background-color: $font-color;
+		color: white;
+		border-radius: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+		font-weight: 600;
+		cursor: pointer;
+	}
+}
+
+.reviews{
+	display: flex;
+	width: 60%;
+	justify-content: flex-end;
+	align-items: center;
+	&__title{
+		color: $shadow-color-secondary;
+		font-weight: 600;
+		margin-right: 10px;
+	}
+	&__img{
+		width: 30px;
+		height: 30px;
+		object-fit: cover;
+		margin-right: 5px;
+		border-radius: 5px;
+	}
+	&__number{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 5px;
+		background-color: $font-color;
+		color: white;
+		text-align: center;
+	}
+}
+
+.cities{
+	position: relative;
+	width: 30%;	
+	height: 410px;
+	right: 20px;
+    top: -230px;
+}
+
+.city-card{
+	top: -220px;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px;
+	box-shadow: 2px 16px 49px $shadow-color-secondary;
+	background-color: white;
+	margin-bottom: 20px;
+	&__up{
+		width: 100%;
+		height: 70%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__icon-container{
+		width: 35%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $card-color;
+		border-radius: 15px;
+	}
+	&__icon{
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+	}
+	&__temperature{
+		width: 30%;
+		text-align: center;
+		font-family: $font-title;
+		font-size: 2rem;
+	}
+	&__centigrades{
+		font-size: 1rem;
+		vertical-align: top;
+		color: $shadow-color-secondary;
+	}
+	&__place{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid $shadow-color;
+	}
+	&__city{
+		margin: 0;
+		font-weight: 600;
+		font-family: $font-title;
+		font-size: 2rem;
+	}
+	&__country{
+		margin: 0;
+		font-family: $font-title;
+		font-size: 1rem;
+	}
+	&__down{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__text{
+		color: $shadow-color-secondary;
+	}
+}
+
+.add{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 15px;
+	border: 2px dashed $shadow-color;
+	&__button{
+		margin-top: 30px;
+		padding: 15px 30px;
+		background-color: $card-color;
+		font-family: $font;
+		border: none;
+		border-radius: 80px;
+		font-weight: 600;
+		color: $container-color;
+		cursor: pointer;
+	}
+}
+
+
+
+
+
