@@ -132,7 +132,7 @@ function handleRequestCity(){
 
         const centigradeSpan = document.createElement('span');
         centigradeSpan.classList.add('city-card__centigrades');
-        centigradeSpan.textContent = 'C°';
+        centigradeSpan.textContent = '°C';
 
         const temperature = document.createElement('p');
         temperature.classList.add('city-card__temperature');

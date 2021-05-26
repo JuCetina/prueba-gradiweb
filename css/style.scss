@@ -37,6 +37,7 @@
 $background-color: #e3e8ee;
 $font: 'Poppins', sans-serif;
 $font-title: 'Roboto', sans-serif;
+$font-numbers: 'Roboto Condensed', sans-serif;
 $font-color: #816be8;
 $container-color: #30328c;
 $shadow-color: #c4c4c4;
@@ -95,7 +96,8 @@ body{
       	z-index: 2;
       	&--temperature{
         	justify-content: flex-end;
-        	font-family: $font-title;
+        	font-family: $font-numbers;
+			letter-spacing: -1px;
         	font-size: 2rem;
         	background-color: $font-color;
         	height: 150px;
@@ -228,7 +230,8 @@ body{
 		}
 	}
 	&__temperature{
-		font-family: $font-title;
+		font-family: $font-numbers;
+		letter-spacing: -1px;
 		font-weight: 700;
 	}
 	&__centigrades{
@@ -362,13 +365,15 @@ body{
 	&__temperature{
 		width: 30%;
 		text-align: center;
-		font-family: $font-title;
+		font-family: $font-numbers;
+		letter-spacing: -1px;
 		font-size: 2rem;
 	}
 	&__centigrades{
 		font-size: 1rem;
 		vertical-align: top;
 		color: $shadow-color-secondary;
+		font-family: $font;
 	}
 	&__place{
 		width: 30%;

@@ -94,7 +94,8 @@ body {
 				-webkit-box-pack: end;
 				    -ms-flex-pack: end;
 				        justify-content: flex-end;
-				font-family: "Roboto", sans-serif;
+				font-family: "Roboto Condensed", sans-serif;
+				letter-spacing: -1px;
 				font-size: 2rem;
 				background-color: #816be8;
 				height: 150px;
@@ -261,7 +262,8 @@ body {
 				color: white;
 }
 .card__temperature {
-				font-family: "Roboto", sans-serif;
+				font-family: "Roboto Condensed", sans-serif;
+				letter-spacing: -1px;
 				font-weight: 700;
 }
 .card__centigrades {
@@ -441,13 +443,15 @@ body {
 .city-card__temperature {
 				width: 30%;
 				text-align: center;
-				font-family: "Roboto", sans-serif;
+				font-family: "Roboto Condensed", sans-serif;
+				letter-spacing: -1px;
 				font-size: 2rem;
 }
 .city-card__centigrades {
 				font-size: 1rem;
 				vertical-align: top;
 				color: #8d8c8c;
+				font-family: "Poppins", sans-serif;
 }
 .city-card__place {
 				width: 30%;
