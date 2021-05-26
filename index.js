@@ -66,9 +66,13 @@ function handleRequestBtaForecast(){
             icon.classList.add('card__icon');
             icon.src = `${API_URL_ICON}${data.list[index[i]].weather[0].icon}.png`;
 
+            const iconContainer = document.createElement('div');
+            iconContainer.classList.add('card__icon-container');
+            iconContainer.appendChild(icon);
+
             const cardLeft = document.createElement('div');
             cardLeft.classList.add('card__left');
-            cardLeft.append(icon, weather);
+            cardLeft.append(iconContainer, weather);
 
             const cardRight = document.createElement('div');
             cardRight.classList.add('card__right');
@@ -143,7 +147,7 @@ function handleRequestCity(){
 
         const country = document.createElement('p');
         country.classList.add('city-card__country');
-        country.textContent = (data.sys.country === 'FR' ? 'Francia' : 'España');
+        country.textContent = (data.sys.country === 'FR' ? 'France' : 'Spain');
 
         const place = document.createElement('div');
         place.classList.add('city-card__place');

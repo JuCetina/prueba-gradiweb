@@ -70,7 +70,6 @@ body{
     margin: 30px auto;
     background: url(../images/bta3.jpg) no-repeat center 32%;
     border-radius: 15px;
-    position: relative;
     &__city{
         position: absolute;
         top: 40px;
@@ -84,8 +83,8 @@ body{
       	width: 80px;
       	height: 80px;
       	position: absolute;
-      	top: 70px;
-      	left: -34px;
+      	top: 105px;
+      	left: 0;
       	background-color: $container-color;
       	border-radius: 0 30px 30px 10px;
       	color: white;
@@ -95,7 +94,6 @@ body{
       	font-size: .8rem;
       	z-index: 2;
       	&--temperature{
-        	top: 70px;
         	justify-content: flex-end;
         	font-family: $font-title;
         	font-size: 2rem;
@@ -187,13 +185,19 @@ body{
 		height: 100%;
 		display: flex;
 		align-items: center;
+		justify-content: flex-start;
+	}
+	&__icon-container{
+		height: 100%;
+		width: 68px;
+		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	&__icon{
 		width: 50px;
 		height: 50px;
 		object-fit: cover;
-		margin-right: 10px;
 	}
 	&__weather{
 		display: flex;
@@ -338,7 +342,6 @@ body{
 		width: 100%;
 		height: 70%;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 	}
 	&__icon-container{

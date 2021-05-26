@@ -59,7 +59,6 @@ body {
 				margin: 30px auto;
 				background: url(../images/bta3.jpg) no-repeat center 32%;
 				border-radius: 15px;
-				position: relative;
 }
 .banner__city {
 				position: absolute;
@@ -74,8 +73,8 @@ body {
 				width: 80px;
 				height: 80px;
 				position: absolute;
-				top: 70px;
-				left: -34px;
+				top: 105px;
+				left: 0;
 				background-color: #30328c;
 				border-radius: 0 30px 30px 10px;
 				color: white;
@@ -93,7 +92,6 @@ body {
 				z-index: 2;
 }
 .banner__item--temperature {
-				top: 70px;
 				-webkit-box-pack: end;
 				    -ms-flex-pack: end;
 				        justify-content: flex-end;
@@ -197,16 +195,28 @@ body {
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
+				-webkit-box-pack: start;
+				    -ms-flex-pack: start;
+				        justify-content: flex-start;
+}
+.card__icon-container {
+				height: 100%;
+				width: 68px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
 				-webkit-box-pack: center;
 				    -ms-flex-pack: center;
 				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 }
 .card__icon {
 				width: 50px;
 				height: 50px;
 				-o-object-fit: cover;
 				   object-fit: cover;
-				margin-right: 10px;
 }
 .card__weather {
 				display: -webkit-box;
@@ -403,9 +413,6 @@ body {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-pack: justify;
-				    -ms-flex-pack: justify;
-				        justify-content: space-between;
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
