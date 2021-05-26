@@ -61,7 +61,7 @@ body{
     background-color: white;
     box-shadow: 2px 2px 20px $shadow-color;
 	position: relative;
-	max-height: 800px;
+	// max-height: 800px;
 }
 
 .banner{
@@ -107,7 +107,7 @@ body{
 				height: 10px;
 				background-color: $container-color;
 				position: absolute;
-				top: -10px;
+				top: -7px;
 				left: 0;
 			}
 			&::after{
@@ -116,11 +116,11 @@ body{
 				height: 10px;
 				background-color: $font-color;
 				position: absolute;
-				bottom: -10px;
+				bottom: -7px;
 				left: 0;
 			}
 			& .before{
-				width: 18px;
+				width: 17px;
 				height: 17px;
 				position: absolute;
 				top: -17px;
@@ -129,7 +129,7 @@ body{
 				background-color: white;		
 			}
 			& .after{
-				width: 18px;
+				width: 17px;
 				height: 17px;
 				position: absolute;
 				bottom: -17px;
@@ -166,7 +166,7 @@ body{
 }
 
 .title{
-	font-size: 2rem;
+	font-size: 1.8rem;
 	&__subtext{
 		font-weight: 400;
 	}
@@ -221,6 +221,7 @@ body{
 		align-items: center;
 		background-color: $card-color;
 		border-radius: 15px;
+		font-size: 1.2rem;
 		&--first{
 			background-color: $font-color;
 			color: white;
@@ -423,32 +424,224 @@ body{
 	}
 }
 
+@media screen and (max-width: 1367px){
+	.title{
+		font-size: 1.5rem;
+	}
 
-@media screen and (max-width: 1920px){
-	
-}
+	.card{
+		&__day{
+			font-size: 0.8rem;
+			margin-right: 10px;
+		}
+		&__state {
+			font-size: 0.8rem;
+		}
+	}
 
-@media screen and (max-width: 1366px){
-	
+	.cities{
+		top: -260px;
+	}
+
+	.city-card{
+		&__city{
+			font-size: 1.5rem;
+		}
+		&__text {
+			font-size: 0.7rem;
+		}
+	}
 }
 
 @media screen and (max-width: 1024px){
-	
+	.content-container{
+		flex-wrap: wrap;
+	}
+
+	.forecast{
+		width: 35%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.card{
+		&__day{
+			font-size: 1rem;
+		}
+		&__state{
+			font-size: 1rem;
+		}
+	}
+
+	.places{
+		width: 60%;
+		justify-content: space-around;
+	}
+
+	.cities{
+		position: static;
+		width: 100%;
+		height: 115px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	.city-card{
+		width: 30%;
+		height: 135px;
+		box-shadow: 16px 16px 49px $shadow-color-secondary;
+		&__temperature {
+			font-size: 1.5rem;
+		}
+		&__city{
+			font-size: 1.2rem;
+		}
+	}
+
+	.add{
+		width: 30%;
+		height: 135px;
+		&__button {
+			margin-top: 15px;
+		}
+		&__img{
+			height: 90px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px){
-	
+	.card{
+		&__day{
+			font-size: 0.8rem;
+		}
+		&__state{
+			font-size: 0.8rem;
+		}
+	}
+
+	.reviews__title{
+		font-size: 0.7rem;
+	}
+
+	.places__button{
+		width: 40%;
+	}
+
+	.city-card{
+		height: 110px;
+		&__temperature{
+			font-size: 1.3rem;
+		}
+		&__city{
+			font-size: 1rem;
+		}
+		&__text{
+			font-size: 0.5rem;
+		}
+	}
+
+	.add{
+		height: 110px;
+		&__button{
+			padding: 12px 20px;
+			margin-top: 13px;
+		}
+		&__img{
+			height: 75px;
+		}
+	}
 }
 
 @media screen and (max-width: 480px){
-	
+	.banner{
+		width: 90%;
+	}
+
+	.content-container{
+		flex-direction: column;
+		width: 90%;
+	}		
+
+	.forecast{
+		width: 100%;
+	}
+
+	.card{
+		&__day{
+			font-size: 1rem;
+		}
+		&__state{
+			font-size: 1rem;
+		}
+	}
+
+	.places{
+		width: 100%;
+	}
+
+	.cities{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.city-card{
+		width: 100%;
+		&__text{
+			font-size: 0.8rem;
+		}
+	}
+
+	.add{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 320px){
-	
+	.banner{
+		width: 87%;
+	}
+
+	.title{
+		margin: 0;
+	}
+
+	.places{
+		height: auto;
+		&__container{
+			flex-wrap: wrap;
+		}
+		&__principal{
+			width: 100%;
+			height: auto;
+		}
+		&__secondary{
+			width: 100%;
+			height: auto;
+			flex-direction: row;
+			margin-top: 20px;
+		}
+		&__first{
+			width: 47%;
+			height: auto;
+		}
+		&__second{
+			width: 47%;
+			height: auto;
+		}
+	}
+
+	.reviews{
+		width: 87%;
+	}
+
+	.city-card__text{
+		font-size: 0.6rem;
+	}
+
+	.places__button{
+		width: 47%;
+	}
 }
-
-
-
-
-
