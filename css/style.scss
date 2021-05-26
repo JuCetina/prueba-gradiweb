@@ -92,7 +92,6 @@ body{
       	display: flex;
       	flex-direction: column;
       	align-items: center;
-      	justify-content: center;
       	font-size: .8rem;
       	z-index: 2;
       	&--temperature{
@@ -143,6 +142,9 @@ body{
 			}
       	}
     }
+	&__condition-text{
+		margin: 0;
+	}
 	&__temperature{
 		margin: 0 0 16px;
 	}
@@ -215,6 +217,10 @@ body{
 		align-items: center;
 		background-color: $card-color;
 		border-radius: 15px;
+		&--first{
+			background-color: $font-color;
+			color: white;
+		}
 	}
 	&__temperature{
 		font-family: $font-title;
@@ -412,6 +418,31 @@ body{
 		color: $container-color;
 		cursor: pointer;
 	}
+}
+
+
+@media screen and (max-width: 1920px){
+	
+}
+
+@media screen and (max-width: 1366px){
+	
+}
+
+@media screen and (max-width: 1024px){
+	
+}
+
+@media screen and (max-width: 768px){
+	
+}
+
+@media screen and (max-width: 480px){
+	
+}
+
+@media screen and (max-width: 320px){
+	
 }
 
 

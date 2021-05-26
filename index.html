@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="index.js"></script>
     <title>Weather Forecast</title>
 </head>
 <body>
@@ -16,54 +17,18 @@
                 <i class="icon-location"></i> Bogotá
             </p>
             <div class="banner__item">
-                <img class="banner__condition-icon" src="" alt="">
-                <p class="banner__condition-text">Cloudy</p>
+                <img class="banner__condition-icon" alt="">
+                <p class="banner__condition-text"></p>
             </div>
             <div class="banner__item banner__item--temperature">
                 <span class="before"></span>
-                <p class="banner__temperature">31<span class="banner__centigrades">°C</span></p>
+                <p class="banner__temperature"></p>
                 <span class="after"></span>
             </div>
         </section>
         <section class="content-container">
             <article class="forecast">
                 <h1 class="title">3 Days <span class="title__subtext">Forecast</span></h1>
-                <div class="card">
-                    <div class="card__left">
-                        <img  class="card__icon" src="" alt="">
-                        <div class="card__weather">
-                            <p class="card__day">Friday</p>
-                            <p class="card__state">Rain</p>
-                        </div>
-                    </div>
-                    <div class="card__right">
-                        <p class="card__temperature">32<span class="card__centigrades">°</span> / 24<span class="card__centigrades">°</span></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__left">
-                        <img  class="card__icon" src="" alt="">
-                        <div class="card__weather">
-                            <p class="card__day">Friday</p>
-                            <p class="card__state">Rain</p>
-                        </div>
-                    </div>
-                    <div class="card__right">
-                        <p class="card__temperature">32<span class="card__centigrades">°</span> / 24<span class="card__centigrades">°</span></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__left">
-                        <img  class="card__icon" src="" alt="">
-                        <div class="card__weather">
-                            <p class="card__day">Friday</p>
-                            <p class="card__state">Rain</p>
-                        </div>
-                    </div>
-                    <div class="card__right">
-                        <p class="card__temperature">32<span class="card__centigrades">°</span> / 24<span class="card__centigrades">°</span></p>
-                    </div>
-                </div>
             </article>
             <article class="places">
                 <div class="places__container">
@@ -88,40 +53,6 @@
                 </div>
             </article>
             <article class="cities">
-                <div class="city-card">
-                    <div class="city-card__up">
-                        <div class="city-card__icon-container">
-                            <img class="city-card__icon" src="" alt="">
-                        </div>
-                        <p class="city-card__temperature">29<span class="city-card__centigrades">°C</span></p>
-                        <div class="city-card__place">
-                            <p class="city-card__city">Lyon</p>
-                            <p class="city-card__country">Francia</p>
-                        </div>
-                    </div>
-                    <div class="city-card__down">
-                        <p class="city-card__text">Humidity 64%</p>
-                        <p class="city-card__text">West</p>
-                        <p class="city-card__text">8.3km/h</p>
-                    </div>
-                </div>
-                <div class="city-card">
-                    <div class="city-card__up">
-                        <div class="city-card__icon-container">
-                            <img class="city-card__icon" src="" alt="">
-                        </div>
-                        <p class="city-card__temperature">29<span class="city-card__centigrades">°C</span></p>
-                        <div class="city-card__place">
-                            <p class="city-card__city">Lyon</p>
-                            <p class="city-card__country">Francia</p>
-                        </div>
-                    </div>
-                    <div class="city-card__down">
-                        <p class="city-card__text">Humidity 64%</p>
-                        <p class="city-card__text">West</p>
-                        <p class="city-card__text">8.3km/h</p>
-                    </div>
-                </div>
                 <div class="add">
                     <button class="add__button">Add Locations</button>
                     <img class="add__img" src="images/place.svg" alt="">
