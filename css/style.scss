@@ -106,19 +106,19 @@ body{
 			&::before{
 				content: '';
 				width: 7px;
-				height: 7px;
+				height: 8px;
 				background-color: $container-color;
 				position: absolute;
-				top: -7px;
+				top: -8px;
 				left: 0;
 			}
 			&::after{
 				content: '';
 				width: 7px;
-				height: 7px;
+				height: 8px;
 				background-color: $font-color;
 				position: absolute;
-				bottom: -7px;
+				bottom: -8px;
 				left: 0;
 			}
 			& .before{

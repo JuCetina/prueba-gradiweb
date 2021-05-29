@@ -110,20 +110,20 @@ body {
 .banner__item--temperature::before {
 	content: '';
 	width: 7px;
-	height: 7px;
+	height: 8px;
 	background-color: #30328c;
 	position: absolute;
-	top: -7px;
+	top: -8px;
 	left: 0;
 }
 
 .banner__item--temperature::after {
 	content: '';
 	width: 7px;
-	height: 7px;
+	height: 8px;
 	background-color: #816be8;
 	position: absolute;
-	bottom: -7px;
+	bottom: -8px;
 	left: 0;
 }
 
