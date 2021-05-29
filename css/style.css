@@ -109,8 +109,8 @@ body {
 
 .banner__item--temperature::before {
 	content: '';
-	width: 10px;
-	height: 10px;
+	width: 7px;
+	height: 7px;
 	background-color: #30328c;
 	position: absolute;
 	top: -7px;
@@ -119,8 +119,8 @@ body {
 
 .banner__item--temperature::after {
 	content: '';
-	width: 10px;
-	height: 10px;
+	width: 7px;
+	height: 7px;
 	background-color: #816be8;
 	position: absolute;
 	bottom: -7px;
@@ -128,7 +128,7 @@ body {
 }
 
 .banner__item--temperature .before {
-	width: 17px;
+	width: 13px;
 	height: 17px;
 	position: absolute;
 	top: -17px;
@@ -138,7 +138,7 @@ body {
 }
 
 .banner__item--temperature .after {
-	width: 17px;
+	width: 13px;
 	height: 17px;
 	position: absolute;
 	bottom: -17px;

@@ -105,8 +105,8 @@ body{
         	z-index: 1;
 			&::before{
 				content: '';
-				width: 10px;
-				height: 10px;
+				width: 7px;
+				height: 7px;
 				background-color: $container-color;
 				position: absolute;
 				top: -7px;
@@ -114,15 +114,15 @@ body{
 			}
 			&::after{
 				content: '';
-				width: 10px;
-				height: 10px;
+				width: 7px;
+				height: 7px;
 				background-color: $font-color;
 				position: absolute;
 				bottom: -7px;
 				left: 0;
 			}
 			& .before{
-				width: 17px;
+				width: 13px;
 				height: 17px;
 				position: absolute;
 				top: -17px;
@@ -131,7 +131,7 @@ body{
 				background-color: white;		
 			}
 			& .after{
-				width: 17px;
+				width: 13px;
 				height: 17px;
 				position: absolute;
 				bottom: -17px;
