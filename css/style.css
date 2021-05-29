@@ -709,9 +709,9 @@ body {
 								width: 100%;
 				}
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 				.banner {
-								width: 87%;
+								width: 85%;
 				}
 
 				.title {
